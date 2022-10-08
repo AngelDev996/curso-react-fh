@@ -1,3 +1,2 @@
-let nombre = 'Angel'
+console.log('Hola mundo')
 
-console.log(nombre)
