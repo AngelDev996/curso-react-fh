@@ -1,5 +1,3 @@
-
-
 const persona = {
 
     nombre : 'Tony',
@@ -13,10 +11,9 @@ const persona = {
 
 }
 
-console.log(persona.direccion.lat)
-
-
-
 const persona2 = persona //NO hacer esto para clonar objetos
 const persona3 = {...persona} //Esto si se puede hacer para clonar objetos (Operador spread)
-//Jetbreains WebStorm
+//Jetbrains WebStorm
+console.log(persona.direccion.lat)
+console.log(persona2, persona3)
+console.log('Jetbrains')
