@@ -10,12 +10,12 @@ const getHeroeById = (id) =>{
 
 }
 
-console.log(getHeroeById(1))
 
 
 const getheroesByOwner = (owner) => {
     return heroes.filter(heroes => heroes.owner === owner)
 }
 
-console.log(getheroesByOwner('DC'))
 
+
+export default getHeroeById
