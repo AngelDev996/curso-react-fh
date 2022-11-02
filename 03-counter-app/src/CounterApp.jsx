@@ -2,13 +2,23 @@ import { useState } from 'react'
 import PropTypes from 'prop-types'
 
 //rafc
-export const CounterApp = () => {
+export const CounterApp = ({value}) => {
 
-    const [counter, setCounter] = useState(12)
+    const [counter, setCounter] = useState(value)
 
-    function handleEvent(){
+    function handleAdd(){
         
         setCounter (counter+1)
+    }
+
+    function handleSubstract(){
+        
+        setCounter (counter-1)
+    }
+
+    function handleReset(){
+        
+        setCounter(value)
     }
 
 
@@ -16,8 +26,17 @@ export const CounterApp = () => {
     <>
     <h1>CounterApp</h1>
     <h2> { counter } </h2>
-    <button onClick={ handleEvent }>
+    <button onClick={ handleAdd }>
         +1
+    </button>
+
+    <button onClick={handleSubstract}>
+        -1
+    </button>
+
+
+    <button onClick={handleReset}>
+        Reset    
     </button>
     </>
    
@@ -25,9 +44,9 @@ export const CounterApp = () => {
 }
 
 CounterApp.propTypes = {
-    contador: PropTypes.number.isRequired
+    value: PropTypes.number.isRequired
 }
 
 CounterApp.defaultProps = {
-    contador: 0
+    value: 20
 }

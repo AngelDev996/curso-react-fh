@@ -14,7 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <React.StrictMode>
          {/* <HelloWorldApp/> */}
          {/* <FirstApp title='hi' subtitle={123} /> */}
-         <CounterApp/>
+         <CounterApp />
     
     </React.StrictMode>
 
