@@ -13,28 +13,28 @@ import PropTypes from 'prop-types'
 
 // }
 
-export const FirstApp = ({title, subtitle}) => {
+export const FirstApp = ({ title, subtitle }) => {
 
 
-    if(!title){
-        throw new Error('El title no existe')
-    }
+  if (!title) {
+    throw new Error('El title no existe')
+  }
 
 
   return (
-  <>
+    <>
 
-    <h1>{title} { subtitle}</h1>
-  </>
-   
+      <h1>{title} {subtitle}</h1>
+    </>
+
   )
 }
 
 
 
 FirstApp.propTypes = {
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.number.isRequired
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.number.isRequired
 }
 
 FirstApp.defaultProps = {
